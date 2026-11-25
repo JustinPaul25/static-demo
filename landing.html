@@ -24,7 +24,7 @@
                 <nav class="flex gap-2 overflow-x-auto pb-1 md:hidden" aria-label="Demo screens">
                     <a href="index.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700">Hub</a>
                     <a href="landing.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-blue-700 px-4 text-sm font-medium text-white">Landing</a>
-                    <a href="questionnaire.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700">Questions</a>
+                    <a href="questionnaire-personal.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700">Questions</a>
                     <a href="checkout.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700">Checkout</a>
                     <a href="results.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700">Results</a>
                     <a href="report.html" class="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700">Report</a>
@@ -32,7 +32,7 @@
                 </nav>
                 <nav class="hidden flex-wrap gap-x-4 gap-y-2 md:flex" aria-label="Demo screens">
                     <a href="landing.html" class="text-sm font-medium text-blue-700">Landing</a>
-                    <a href="questionnaire.html" class="text-sm font-medium text-slate-600 hover:text-blue-700">Questionnaire</a>
+                    <a href="questionnaire-personal.html" class="text-sm font-medium text-slate-600 hover:text-blue-700">Questionnaire</a>
                     <a href="checkout.html" class="text-sm font-medium text-slate-600 hover:text-blue-700">Checkout</a>
                     <a href="results.html" class="text-sm font-medium text-slate-600 hover:text-blue-700">Results</a>
                     <a href="report.html" class="text-sm font-medium text-slate-600 hover:text-blue-700">Report</a>
@@ -69,20 +69,39 @@
             </section>
             <section>
                 <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">How it works</h2>
-                <div class="mt-4 grid grid-cols-1 gap-3 sm:mt-6 sm:grid-cols-3 sm:gap-4">
+                <div class="mt-4 grid grid-cols-1 gap-4 sm:mt-6 sm:gap-5">
                     <div class="rounded-xl border border-sky-100 bg-white p-5 shadow-sm sm:p-6">
-                        <h3 class="font-semibold text-slate-900">Tell us about you</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-600">Home, lifestyle, family, and preferences.</p>
+                        <div class="flex items-start gap-3">
+                            <span class="flex size-8 shrink-0 items-center justify-center rounded-full bg-blue-700 text-sm font-bold text-white">1</span>
+                            <div>
+                                <h3 class="font-semibold text-slate-900">Enter personal details</h3>
+                                <ul class="mt-2 list-inside list-disc space-y-1 text-sm leading-relaxed text-slate-600">
+                                    <li>Full name</li>
+                                    <li>Birth year</li>
+                                    <li>Country and city</li>
+                                    <li>Type of house (apartment, townhouse, standalone house)</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="rounded-xl border border-sky-100 bg-white p-5 shadow-sm sm:p-6">
-                        <h3 class="font-semibold text-slate-900">Pay securely</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-600">One-time $2.00 USD via Stripe.</p>
-                    </div>
-                    <div class="rounded-xl border border-sky-100 bg-white p-5 shadow-sm sm:p-6">
-                        <h3 class="font-semibold text-slate-900">Get your matches</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-600">Report by email with secure web and PDF access.</p>
+                        <div class="flex items-start gap-3">
+                            <span class="flex size-8 shrink-0 items-center justify-center rounded-full bg-blue-700 text-sm font-bold text-white">2</span>
+                            <div>
+                                <h3 class="font-semibold text-slate-900">Answer lifestyle questions</h3>
+                                <ul class="mt-2 list-inside list-disc space-y-1 text-sm leading-relaxed text-slate-600">
+                                    <li>Do you have a big or small backyard?</li>
+                                    <li>How many hours are you home?</li>
+                                    <li>Do you have children?</li>
+                                    <li>Are you physically active?</li>
+                                    <li>Have you owned a dog before?</li>
+                                    <li>Do you prefer small, medium or large dogs?</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <p class="mt-4 text-sm text-slate-600 sm:mt-5">Then pay securely ($2.00 USD) and receive your ranked breed matches by email.</p>
             </section>
             <section>
                 <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">Sample breeds</h2>
@@ -118,7 +137,7 @@
                     </div>
                 </dl>
             </section>
-            <a href="questionnaire.html" class="flex min-h-12 w-full items-center justify-center rounded-xl bg-blue-50 text-sm font-semibold text-blue-800 active:bg-blue-100 sm:w-auto sm:justify-start sm:bg-transparent sm:px-0 sm:text-blue-700 sm:hover:underline">Next: Questionnaire mockup →</a>
+            <a href="questionnaire-personal.html" class="flex min-h-12 w-full items-center justify-center rounded-xl bg-blue-50 text-sm font-semibold text-blue-800 active:bg-blue-100 sm:w-auto sm:justify-start sm:bg-transparent sm:px-0 sm:text-blue-700 sm:hover:underline">Next: Questionnaire mockup →</a>
         </div>
     </main>
     <footer class="border-t border-sky-100 bg-white px-4 py-6 text-center text-sm text-slate-500">
