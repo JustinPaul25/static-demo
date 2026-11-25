@@ -1,0 +1,13 @@
+# Deploy this folder as the site root (no build step).
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/preview"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/preview/*"
+  to = "/:splat.html"
+  status = 302
